@@ -16,7 +16,7 @@ interface TypographyProps {
         | "caption3"
         | "caption4";
     component?: "h1" | "h2" | "h3" | "h4" | "div" | "p" | "span";
-    theme?: "secondary" | "primary" | "black" | "gray" | "white" | "danger" | "warning" | "success";
+    theme?: "LavenderBlush" | "LavenderMist" | "Mauve" | "LightOrchid" | "Orchid" | "MediumPurple" | "PurpleHeart" | "DarkPurple"| "Amethyst"| "DeepPurple"| "MidnightPurple";
     weight?: "regular" | "medium" | "semibold";
     className?: string;
     children: React.ReactNode;
@@ -25,7 +25,7 @@ interface TypographyProps {
 export const Typography = ({
                                variant = "h3",
                                component: Component = "div",
-                               theme = "black",
+                               theme = "PurpleHeart",
                                weight = "regular",
                                className,
                                children
@@ -76,30 +76,39 @@ export const Typography = ({
             break;
     }
     switch (theme) {
-        case "primary":
-            colorStyles = "text-primary"
-            break
-        case "white":
-            colorStyles = "text-white"
-            break
-        case "black":
-            colorStyles = "text-gray"
-            break
-        case "gray":
-            colorStyles = "text-gray-700"
-            break
-        case "secondary":
-            colorStyles = "text-secondary"
-            break
-        case "danger":
-            colorStyles = "text-alert-danger"
-            break
-        case "warning":
-            colorStyles = "text-alert-warning"
-            break
-        case "success":
-            colorStyles = "text-alert-success"
-            break
+        case "LavenderBlush":
+            colorStyles = "text-purple-50";
+            break;
+        case "LavenderMist":
+            colorStyles = "text-purple-100";
+            break;
+        case "Mauve":
+            colorStyles = "text-purple-200";
+            break;
+        case "LightOrchid":
+            colorStyles = "text-purple-300";
+            break;
+        case "Orchid":
+            colorStyles = "text-purple-400";
+            break;
+        case "MediumPurple":
+            colorStyles = "text-purple-500";
+            break;
+        case "PurpleHeart":
+            colorStyles = "text-purple-600";
+            break;
+        case "DarkPurple":
+            colorStyles = "text-purple-700";
+            break;
+        case "Amethyst":
+            colorStyles = "text-purple-800";
+            break;
+        case "DeepPurple":
+            colorStyles = "text-purple-900";
+            break;
+        case "MidnightPurple":
+            colorStyles = "text-purple-950";
+            break;
     }
     return <Component
         className={clsx(variantStyles, colorStyles, weight === "medium" && "font-medium", className)}>{children}</Component>;

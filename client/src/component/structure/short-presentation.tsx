@@ -14,23 +14,23 @@ export const ShortPresentation = () => {
     return (
         <section id="header">
             <BlurFade delay={0.25} inView>
-                <Typography>
+                <Typography variant="caption3" theme="Amethyst">
                     Hi, my name is
                 </Typography>
 
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView>
-                <Typography>
+                <Typography variant="h1" theme="LavenderBlush">
                     Titouan Abbate
                 </Typography>
             </BlurFade>
             <BlurFade delay={0.25 * 4} inView>
-                <Typography>
+                <Typography variant="h1" theme="Amethyst">
                     I'm in my 5th year of computer engineering.
                 </Typography>
             </BlurFade>
             <BlurFade delay={0.25 * 6} inView>
-                <Typography>
+                <Typography variant="caption1" theme="Amethyst">
                     I’m a {age} years old french student engineer at Polytech Lyon and I also develop things on my free time. l’m open to any opportunity.
                 </Typography>
             </BlurFade>
