@@ -5,6 +5,7 @@ export type ImageFormat = 'svg' | 'png' | 'jpg' | 'jpeg' | 'gif';
 
 export interface AppLinks {
     label: string;
+    name: string;
     baseUrl: string;
     type: LinkType;
     icon?: IconType;
