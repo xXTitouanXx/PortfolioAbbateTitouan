@@ -36,6 +36,12 @@ const config = {
                     800: "#6b21a8",  // Amethyst
                     900: "#581c87",  // DeepPurple
                     950: "#3b0764",  // MidnightPurple
+                    1000: "#2b054c",
+                    1100: "#1f0438",
+                    1200: "#140226",
+                    1300: "#0E0016",
+                    1400: "#0B0012",
+                    1500: "#06000D",
                 },
                 primary: {
                     DEFAULT: "hsl(var(--primary))",
@@ -192,6 +198,8 @@ const config = {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
+                '4xl': '2.5rem',
+                '5xl': '3rem',
             },
             keyframes: {
                 "accordion-down": {
@@ -206,11 +214,17 @@ const config = {
                     "0%, 100%": {boxShadow: "0 0 0 0 var(--pulse-color)"},
                     "50%": {boxShadow: "0 0 0 8px var(--pulse-color)"},
                 },
+                "border-beam": {
+                    "100%": {
+                        "offset-distance": "100%",
+                    },
+                },
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
                 pulse: "pulse var(--duration) ease-out infinite",
+                "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
             },
         },
     },
