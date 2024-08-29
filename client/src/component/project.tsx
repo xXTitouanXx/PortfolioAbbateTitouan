@@ -27,9 +27,9 @@ export const Project = ({
                         }: ProjectProps) => {
     return (
         <div
-            className={cn("relative z-10 flex bg-white pt-4 pb-4 pl-4 pr-4 rounded-4xl", reverse ? "flex-row-reverse" : "flex-row")}>
+            className={cn("relative z-10 flex bg-purple-1300 pt-10 pb-10 pl-4 pr-4 rounded-4xl", reverse ? "flex-row-reverse" : "flex-row")}>
             <BorderBeam
-                size={500}
+                size={300}
                 duration={12}
                 delay={0}
                 colorFrom="#ffaa40"
@@ -43,22 +43,25 @@ export const Project = ({
             </div>
             <div className={cn("w-2/3 flex ", reverse ? "flex-row-reverse" : "flex-row")}>
                 <div className={cn("w-5/6 p-4 flex flex-col justify-between ", reverse ? "text-right" : "")}>
-                    <div>
-                        <Typography variant="caption3">
+                    <div className="pb-4">
+                        <Typography variant="caption3" theme="MediumPurple">
                             {date} - {type}
                         </Typography>
-                        <Typography variant="h4">
+                        <Typography variant="h4" theme="Mauve">
                             {title}
                         </Typography>
                     </div>
-                    <Typography variant="caption2">
+                    <Typography variant="caption2" theme="MidnightPurple">
                         {description}
                     </Typography>
-                    <div className={cn("flex", reverse ? "justify-end" : "justify-start")}>
-                        <div className={cn("flex space-x-4", reverse ? "flex-row-reverse" : "")}>
+                    <div className={cn("flex pt-4", reverse ? "justify-end  space-x-4" : "justify-start space-x-4")}>
+                        <div className={cn(
+                            "flex",
+                            reverse ? "flex-row-reverse space-x-reverse space-x-4" : "space-x-4"
+                        )}>
                             {tags.map((tag) => (
                                 <ActiveLink key={tag.url} href={tag.url}>
-                                    <Typography variant="caption3">
+                                    <Typography variant="caption3" theme="MediumPurple">
                                         {tag.name}
                                     </Typography>
                                 </ActiveLink>
@@ -67,18 +70,18 @@ export const Project = ({
                     </div>
                 </div>
                 <div className="relative w-1/6 flex items-end p-2">
-                    <div className="absolute bottom-0  flex gap-2 p-2">
+                    <div className="absolute bottom-0 flex gap-2 p-2 ">
                         {run && <Button
                             variant="ico"
                             baseUrl={links[3]}
                             icon={{icon: VscDebugStart}}
                             iconTheme="accent"
                         />}
-                        <Button variant="ico"
-                                baseUrl={links[0]}
-                                icon={{icon: LuGithub}}
-                                iconTheme="gray"
-                        />
+                            <Button variant="ico"
+                                    baseUrl={links[0]}
+                                    icon={{icon: LuGithub}}
+                                    iconTheme="secondary"
+                            />
                     </div>
                 </div>
             </div>

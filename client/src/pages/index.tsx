@@ -11,26 +11,32 @@ import {ParticlesBackground} from "@/component/particles-background";
 export default function Home() {
     return (
         <div className="relative min-h-screen">
-            <Seo title="Home" description="Home page" />
-            <ParticlesBackground />
-            <Header />
+            <Seo title="Home" description="Home page"/>
+            <ParticlesBackground/>
+            <Header/>
             <div id="short-presentation">
-                <ShortPresentation />
+                <ShortPresentation/>
             </div>
             <div className="relative z-10 pt-20">
-                <div id="presentation">
-                    <Presentation />
+                <div id="presentation" className="gradient-half">
+                    <div className="gradient-half-content">
+                        <Presentation/>
+                    </div>
                 </div>
                 <div id="projects">
-                    <Projects />
+                    <Projects/>
                 </div>
-                <div id="skills">
-                    <Skills />
+                <div id="skills" className="gradient-half">
+                    <div className="gradient-half-content">
+                        <Skills/>
+                    </div>
                 </div>
                 <div id="experience">
-                    <Experience />
+                    <Experience/>
                 </div>
-                <FooterV2 />
+                <div id="contact">
+                    <FooterV2/>
+                </div>
             </div>
         </div>
     );

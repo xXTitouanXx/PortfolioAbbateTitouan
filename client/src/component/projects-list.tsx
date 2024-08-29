@@ -1,16 +1,16 @@
 import {Project} from "@/component/project"; // Assurez-vous que le chemin est correct
 import {projects} from "@/ressources/projects";
 import DotPattern from "@/lib/magicui/components/dot-pattern";
-import {cn} from "@/lib/utils"; // Assurez-vous que le chemin est correct
+import {cn} from "@/lib/utils";
+import {Typography} from "@/component/typography"; // Assurez-vous que le chemin est correct
 
 export const ProjectsList = () => {
     return (
         <div
-            className="relative flex flex-col items-center justify-center overflow-hidden bg-purple-1500 p-20 md:shadow-xl"
+            className="relative flex flex-col items-center justify-center overflow-hidden bg-purple-1500 md:shadow-xl pt-20 py-20"
         >
-            <h2 className="text-center text-4xl font-bold text-white mb-8">
-                My Projects
-            </h2>
+            <div className="pt-16 relative z-10"><Typography variant="h2" theme="Mauve">My projects</Typography></div>
+
             <div className="pt-16 pb-16 space-y-8">
                 {projects.map((project, index) => (
                     <Project

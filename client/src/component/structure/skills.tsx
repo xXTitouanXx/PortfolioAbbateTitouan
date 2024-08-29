@@ -1,14 +1,17 @@
 import IconCloud from "@/lib/magicui/components/icon-cloud";
+import {Typography} from "@/component/typography";
 
-export const Skills = ()=>{
+export const Skills = () => {
     const iconSlugs = [
         "react", "javascript", "typescript", "node-dot-js", "next-dot-js",
         "html5", "css3", "git", "github", "docker"
     ];
     return (
-        <div className="bg-white">
-            <h2 className="text-center text-2xl font-bold mb-8">Skills</h2>
-            <IconCloud iconSlugs={iconSlugs}/>
+        <div className="pt-20 pb-20 justify-center text-center">
+            <Typography variant="h2" theme="Mauve">My skills</Typography>
+            <div className="pt-4 pb-20">
+                <IconCloud iconSlugs={iconSlugs}/>
+            </div>
         </div>
     )
 }

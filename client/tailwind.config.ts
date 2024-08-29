@@ -18,12 +18,19 @@ const config = {
             },
         },
         extend: {
+            backgroundImage: {
+                'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+                'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
+                'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
+                'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                green: '#22c55e',
                 purple: {
                     50: "#faf5ff",   // LavenderBlush
                     100: "#f3e8ff",  // LavenderMist

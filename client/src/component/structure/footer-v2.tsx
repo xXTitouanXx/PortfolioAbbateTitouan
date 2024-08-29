@@ -9,7 +9,7 @@ export const FooterV2 = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-purple-300 p-4">
+        <footer className="bg-gradient-to-t to-purple-1500 from-purple-800 grap-4">
             <Container className="flex flex-col items-center space-y-4">
                     <Dock magnification={100} distance={100}>
                         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">

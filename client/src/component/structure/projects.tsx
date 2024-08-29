@@ -5,7 +5,7 @@ import {ProjectsList} from "@/component/projects-list";
 
 export const Projects = () => {
     return (
-        <div >
+        <div className="">
             <ProjectsList/>
         </div>
     );

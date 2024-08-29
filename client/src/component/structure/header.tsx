@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FolderGit2, HomeIcon } from "lucide-react";
+import {ContactIcon, FolderGit2, HomeIcon} from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/lib/magicui/components/ui/button";
@@ -16,7 +16,7 @@ import { ModeToggle } from "@/lib/magicui/components/mode-toggle";
 import { Icons } from "@/type/dock-icon-type";
 
 const DATA = {
-    navbar: [
+    startnavbar: [
         { href: "#", icon: HomeIcon, label: "Home" },
     ],
     myself: {
@@ -41,6 +41,9 @@ const DATA = {
             icon: Icons.gmail,
         },
     },
+    endnavbar:[
+        { href: "#contact", icon: ContactIcon, label: "Contact" },
+    ]
 };
 
 export const Header= () => {
@@ -51,7 +54,7 @@ export const Header= () => {
             </span>
             <TooltipProvider>
                 <Dock direction="middle" className="flex gap-x-6 bg-transparent text-purple-100 border border-purple-600">
-                    {DATA.navbar.map((item) => (
+                    {DATA.startnavbar.map((item) => (
                         <DockIcon key={item.label} className="mx-2">
                             <Tooltip>
                                 <TooltipTrigger asChild>
@@ -93,16 +96,26 @@ export const Header= () => {
                         </DockIcon>
                     ))}
                     <Separator orientation="vertical" className="h-full py-2 bg-purple-600" />
-                    <DockIcon className="mx-2">
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <ModeToggle className="rounded-full" />
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>Theme</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </DockIcon>
+                    {DATA.endnavbar.map((item) => (
+                        <DockIcon key={item.label} className="mx-2">
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Link
+                                        href={item.href}
+                                        className={cn(
+                                            buttonVariants({ variant: "link", size: "icon" }),
+                                            "size-12 rounded-full"
+                                        )}
+                                    >
+                                        <item.icon className="size-4 text-purple-100 hover:text-purple-600 transition-all duration-300" />
+                                    </Link>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>{item.label}</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </DockIcon>
+                    ))}
                 </Dock>
             </TooltipProvider>
         </div>

@@ -73,10 +73,10 @@ export const Button = ({
             break;
         case "ico":
             if (iconTheme === "accent") {
-                variantStyles = "bg-primary hover:bg-primary-400 text-white rounded-full";
+                variantStyles = "bg-transparent border-2 border-purple-600 hover:text-green hover:border-green text-purple-200 rounded-full";
             }
             if (iconTheme === "secondary") {
-                variantStyles = "bg-primary-200 hover:bg-primary-300/50 text-primary rounded-full";
+                variantStyles = "bg-transparent border-2 border-purple-600 hover:bg-purple-600/20 text-purple-200 rounded-full";
             }
             if (iconTheme === "gray") {
                 variantStyles = "bg-gray-800 hover:bg-gray-700 text-white rounded-full";
