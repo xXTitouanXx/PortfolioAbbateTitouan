@@ -22,22 +22,22 @@ const DATA = {
     myself: {
         About: {
             name: "About",
-            url: "#",
+            url: "#presentation",
             icon: FolderGit2,
         },
         Projects: {
             name: "Projects",
-            url: "#",
+            url: "#projects",
             icon: FolderGit2,
         },
         Skills: {
             name: "Skills",
-            url: "#",
+            url: "#skills",
             icon: Icons.gmail,
         },
         Experience: {
             name: "Experience",
-            url: "#",
+            url: "#experience",
             icon: Icons.gmail,
         },
     },
@@ -45,7 +45,7 @@ const DATA = {
 
 export const Header= () => {
     return (
-        <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+        <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden">
             <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
                 Portfolio Abbate Titouan
             </span>
@@ -73,7 +73,7 @@ export const Header= () => {
                     ))}
                     <Separator orientation="vertical" className="h-full py-2 bg-purple-600" />
                     {Object.entries(DATA.myself).map(([name, data]) => (
-                        <DockIcon key={name} className="mx-2">
+                        <DockIcon key={name} className="mx-8">
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Link

@@ -37,11 +37,11 @@ export const Presentation = () => {
                             computer science concepts across various social media platforms like YouTube under the
                             pseudonym Dimension.
                         </Typography><Typography variant="caption1" className="max-w-xl">
-                            Hi! My name is Angel Uriot, I’m 23 and I develop things on my free time. I like mixing
-                            science and math with programming and I’m always looking for new challenges. I made
-                            simulations, artificial intelligence, websites, games and more... (see the project part of
-                            the site).
-                        </Typography>
+                        Hi! My name is Angel Uriot, I’m 23 and I develop things on my free time. I like mixing
+                        science and math with programming and I’m always looking for new challenges. I made
+                        simulations, artificial intelligence, websites, games and more... (see the project part of
+                        the site).
+                    </Typography>
                         <Typography variant="caption1" className="max-w-xl">
                             In 2018, I entered in the Polytech Paris-Saclay French engineering school in IT major to
                             learn more about math, science and software development. I discovered a lot of technologies
@@ -59,11 +59,11 @@ export const Presentation = () => {
                             computer science concepts across various social media platforms like YouTube under the
                             pseudonym Dimension.
                         </Typography><Typography variant="caption1" className="max-w-xl">
-                            Hi! My name is Angel Uriot, I’m 23 and I develop things on my free time. I like mixing
-                            science and math with programming and I’m always looking for new challenges. I made
-                            simulations, artificial intelligence, websites, games and more... (see the project part of
-                            the site).
-                        </Typography>
+                        Hi! My name is Angel Uriot, I’m 23 and I develop things on my free time. I like mixing
+                        science and math with programming and I’m always looking for new challenges. I made
+                        simulations, artificial intelligence, websites, games and more... (see the project part of
+                        the site).
+                    </Typography>
                         <Typography variant="caption1" className="max-w-xl">
                             In 2018, I entered in the Polytech Paris-Saclay French engineering school in IT major to
                             learn more about math, science and software development. I discovered a lot of technologies
@@ -84,7 +84,17 @@ export const Presentation = () => {
                     </div>
                     {/* Deuxième div */}
                     <div className="p-4 bg-red-500 text-white flex items-start justify-center flex-1">
-                        <Image src="/assets/images/avatar.jpg" width={500} height={500} alt="Avatar"/>
+                        <div className="relative">
+                            {/* Flou autour de l'image */}
+                            <div className="absolute inset-0 bg-white/20 rounded-full blur-md"></div>
+                            <Image
+                                src="/assets/images/avatar.jpg"
+                                width={500} // Réduit la taille pour une meilleure mise en page
+                                height={500}
+                                alt="Avatar"
+                                className="rounded-full"
+                            />
+                        </div>
                     </div>
                 </div>
             </Container>

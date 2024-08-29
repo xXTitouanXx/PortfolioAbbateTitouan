@@ -13,6 +13,9 @@ export const ShortPresentation = () => {
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
+    const handleClick = () => {
+        window.location.href = "#presentation"; // Remplacez par l'URL de votre choix
+    };
     return (
         <section id="header" className="z-0">
             <Container className="relative pt-40 pb-52 overflow-hidden">
@@ -41,7 +44,7 @@ export const ShortPresentation = () => {
                     </BlurFade>
                     <div className="pt-3">
                         <BlurFade delay={0.25 * 6} inView>
-                            <PulsatingButton>
+                            <PulsatingButton onClick={handleClick}>
                                 Get Started
                             </PulsatingButton>
                         </BlurFade>

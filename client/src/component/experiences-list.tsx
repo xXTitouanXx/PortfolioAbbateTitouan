@@ -1,32 +1,33 @@
 import {Project} from "@/component/project"; // Assurez-vous que le chemin est correct
 import {projects} from "@/ressources/projects";
 import DotPattern from "@/lib/magicui/components/dot-pattern";
-import {cn} from "@/lib/utils"; // Assurez-vous que le chemin est correct
+import {cn} from "@/lib/utils";
+import {experiences} from "@/ressources/experiences";
 
-export const ProjectsList = () => {
+export const ExperiencesList = () => {
     return (
         <div
             className="relative flex flex-col items-center justify-center overflow-hidden bg-purple-1500 p-20 md:shadow-xl"
         >
             <h2 className="text-center text-4xl font-bold text-white mb-8">
-                My Projects
+                My experience
             </h2>
             <div className="pt-16 pb-16 space-y-8">
-                {projects.map((project, index) => (
+                {experiences.map((experience, index) => (
                     <Project
                         key={index}
-                        date={project.date}
-                        type={project.type}
-                        title={project.title}
-                        description={project.description}
-                        tags={project.tags}
-                        links={project.links}
-                        video={project.video}
-                        image={project.image}
-                        logo={project.logo}
-                        categories={project.categories}
+                        date={experience.date}
+                        type={experience.type}
+                        title={experience.title}
+                        description={experience.description}
+                        tags={experience.tags}
+                        links={experience.links}
+                        video={experience.video}
+                        image={experience.image}
+                        logo={experience.logo}
+                        categories={experience.categories}
                         reverse={index % 2 === 1}
-                        run={project.run}
+                        run={experience.run}
                     />
                 ))}
             </div>
