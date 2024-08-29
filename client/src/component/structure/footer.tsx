@@ -20,10 +20,10 @@ export const Footer = () => {
             <Container className="pt-9 pb-11 space-y-11">
                 <hr className="text-gray-800"/>
                 <div className="flex items-center justify-between">
-                    <Typography variant="caption4" theme="gray">
-                        {`Copyright © ${currentYear} | Par `}
-                        <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/">Titouan Abbate</a>
-                    </Typography>
+                    {/*<Typography variant="caption4" theme="gray">*/}
+                    {/*    {`Copyright © ${currentYear} | Par `}*/}
+                    {/*    <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/">Titouan Abbate</a>*/}
+                    {/*</Typography>*/}
                 </div>
             </Container>
         </div>
@@ -52,9 +52,9 @@ const FooterLink = ({data}: FooterLinkProps) => {
     ));
     return (
         <div className="min-w-[190px]">
-            <Typography theme="white" variant="caption2" weight="medium" className="pb-5">
-                {data.label}
-            </Typography>
+            {/*<Typography theme="white" variant="caption2" weight="medium" className="pb-5">*/}
+            {/*    {data.label}*/}
+            {/*</Typography>*/}
             <div className="flex gap-4">{linksList}</div>
         </div>
     );
