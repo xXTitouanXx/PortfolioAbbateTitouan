@@ -1,7 +1,6 @@
 import BlurFade from "@/lib/magicui/components/blur-fade"
 import {Typography} from "@/component/typography";
 import PulsatingButton from "@/lib/magicui/components/ui/pulsating-button";
-import {ParticlesBackground} from "@/component/particles-background";
 import {Container} from "@/component/container";
 
 export const ShortPresentation = () => {
@@ -9,12 +8,11 @@ export const ShortPresentation = () => {
     const today = new Date(); // Date actuelle
     let age = today.getFullYear() - birthDate.getFullYear();
     const monthDifference = today.getMonth() - birthDate.getMonth();
-
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
     const handleClick = () => {
-        window.location.href = "#presentation"; // Remplacez par l'URL de votre choix
+        window.location.href = "#presentation";
     };
     return (
         <section id="header" className="z-0">

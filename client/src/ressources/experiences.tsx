@@ -20,7 +20,7 @@ export const experiences: ProjectType[] = [
         image: "/assets/svg/discord.svg",
         logo: "/assets/svg/discord.svg",
         categories: ["Personal", "AI"],
-        run:true,
+        run: true,
     },
     {
         date: 2023,
@@ -41,7 +41,7 @@ export const experiences: ProjectType[] = [
         image: "/assets/svg/discord.svg",
         logo: "/assets/svg/discord.svg",
         categories: ["Personal", "AI"],
-        run:false,
+        run: false,
     },
 
 ]

@@ -1,5 +1,4 @@
-import {Project} from "@/component/project"; // Assurez-vous que le chemin est correct
-import {projects} from "@/ressources/projects";
+import {Project} from "@/component/project";
 import DotPattern from "@/lib/magicui/components/dot-pattern";
 import {cn} from "@/lib/utils";
 import {experiences} from "@/ressources/experiences";
@@ -10,7 +9,8 @@ export const ExperiencesList = () => {
         <div
             className="relative flex flex-col items-center justify-center overflow-hidden bg-purple-1500 md:shadow-xl pt-20 py-20"
         >
-            <div className="pt-16 relative z-10"><Typography variant="h2" theme="Mauve">My experiences</Typography></div>
+            <div className="pt-16 relative z-10"><Typography variant="h2" theme="Mauve">My experiences</Typography>
+            </div>
             <div className="pt-16 pb-16 space-y-8">
                 {experiences.map((experience, index) => (
                     <Project

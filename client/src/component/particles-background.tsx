@@ -42,7 +42,7 @@ export const ParticlesBackground = () => {
         fpsLimit: 120,
         fullScreen: {
             enable: true,
-            zIndex:0,
+            zIndex: 0,
         },
         interactivity: {
             events: {
@@ -106,7 +106,7 @@ export const ParticlesBackground = () => {
     if (!init) return null;
 
     return (
-        <div >
+        <div>
             <Particles
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}

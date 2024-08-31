@@ -1,8 +1,8 @@
-import {Project} from "@/component/project"; // Assurez-vous que le chemin est correct
+import {Project} from "@/component/project";
 import {projects} from "@/ressources/projects";
 import DotPattern from "@/lib/magicui/components/dot-pattern";
 import {cn} from "@/lib/utils";
-import {Typography} from "@/component/typography"; // Assurez-vous que le chemin est correct
+import {Typography} from "@/component/typography";
 
 export const ProjectsList = () => {
     return (

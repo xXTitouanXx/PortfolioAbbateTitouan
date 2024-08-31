@@ -9,5 +9,5 @@ export interface ProjectType {
     image: string;
     logo: string;
     categories: string[];
-    run:boolean
+    run: boolean
 }

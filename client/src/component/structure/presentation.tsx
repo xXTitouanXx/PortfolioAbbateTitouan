@@ -6,13 +6,10 @@ export const Presentation = () => {
     return (
         <div className="">
             <Container className="flex flex-col items-center justify-center pt-16">
-                {/* Div central en haut du conteneur */}
                 <div className="w-full p-4 text-center">
                     <Typography variant="h2" theme="Mauve">Who am I ?</Typography>
                 </div>
-                {/* Conteneur pour les deux divs */}
                 <div className="flex flex-col md:flex-row w-full justify-center items-center">
-                    {/* Premier div */}
                     <div className="p-4 space-y-4 flex-1">
                         <Typography variant="caption1" theme="Mauve" className="max-w-xl">
                             Hi! My name is Angel Uriot, I’m 23 and I develop things on my free time. I like mixing
@@ -84,14 +81,12 @@ export const Presentation = () => {
                             pseudonym Dimension.
                         </Typography>
                     </div>
-                    {/* Deuxième div */}
                     <div className="p-4 flex items-start justify-center flex-1">
                         <div className="relative">
-                            {/* Flou autour de l'image */}
                             <div className="absolute inset-0 bg-white/20 rounded-full blur-md"></div>
                             <Image
                                 src="/assets/images/avatar.jpg"
-                                width={500} // Réduit la taille pour une meilleure mise en page
+                                width={500}
                                 height={500}
                                 alt="Avatar"
                                 className="rounded-full"

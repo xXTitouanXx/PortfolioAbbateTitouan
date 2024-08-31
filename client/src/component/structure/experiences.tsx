@@ -1,4 +1,3 @@
-import {Typography} from "@/component/typography";
 import {ExperiencesList} from "@/component/experiences-list";
 
 export const Experience = () => {
