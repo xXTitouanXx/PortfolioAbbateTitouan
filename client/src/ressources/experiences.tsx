@@ -16,11 +16,10 @@ export const experiences: ProjectType[] = [
             "https://github.com/angeluriot/Language_model",
             "none",
         ],
-        video: "/assets/svg/discord.svg",
         image: "/assets/svg/discord.svg",
-        logo: "/assets/svg/discord.svg",
         categories: ["Personal", "AI"],
         run: true,
+        experience:true,
     },
     {
         date: 2023,
@@ -37,11 +36,10 @@ export const experiences: ProjectType[] = [
             "https://github.com/angeluriot/Generative_adversarial_network",
             "none",
         ],
-        video: "/assets/svg/discord.svg",
         image: "/assets/svg/discord.svg",
-        logo: "/assets/svg/discord.svg",
         categories: ["Personal", "AI"],
         run: false,
+        experience:true,
     },
 
 ]

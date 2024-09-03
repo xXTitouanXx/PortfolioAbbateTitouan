@@ -21,12 +21,11 @@ export const ProjectsList = () => {
                         description={project.description}
                         tags={project.tags}
                         links={project.links}
-                        video={project.video}
                         image={project.image}
-                        logo={project.logo}
                         categories={project.categories}
                         reverse={index % 2 === 1}
                         run={project.run}
+                        experience={project.experience}
                     />
                 ))}
             </div>

@@ -21,12 +21,11 @@ export const ExperiencesList = () => {
                         description={experience.description}
                         tags={experience.tags}
                         links={experience.links}
-                        video={experience.video}
                         image={experience.image}
-                        logo={experience.logo}
                         categories={experience.categories}
                         reverse={index % 2 === 1}
                         run={experience.run}
+                        experience={experience.experience}
                     />
                 ))}
             </div>

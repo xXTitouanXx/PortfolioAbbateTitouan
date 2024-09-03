@@ -5,9 +5,8 @@ export interface ProjectType {
     description: string;
     tags: { name: string; url: string }[];
     links: string[];
-    video: string;
-    image: string;
-    logo: string;
+    image?: string;
     categories: string[];
     run: boolean
+    experience: boolean
 }

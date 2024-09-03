@@ -5,7 +5,7 @@ import {ActiveLink} from "@/component/active-link";
 import {BorderBeam} from "@/components/magicui/border-beam";
 import {LuGithub} from "react-icons/lu";
 import {VscDebugStart} from "react-icons/vsc";
-import {Video} from "lucide-react";
+import Image from 'next/image';
 
 interface ProjectProps {
     date: number;
@@ -14,16 +14,15 @@ interface ProjectProps {
     description: string;
     tags: { name: string; url: string }[];
     links: string[];
-    video: string;
-    image: string;
-    logo: string;
+    image?: string;
     categories: string[];
     reverse?: boolean;
     run: boolean
+    experience: boolean
 }
 
 export const Project = ({
-                            date, type, title, description, tags, links, video, image, logo, categories, reverse, run
+                            date, type, title, description, tags, links, image, categories, reverse, run
                         }: ProjectProps) => {
     return (
         <div
@@ -37,9 +36,16 @@ export const Project = ({
                 className="absolute inset-0 rounded-4xl"
             />
             <div
-                className="w-1/3 bg-gray-300 border border-gray-500 rounded-4xl">
-                {/*<ActiveLink href={links[0]}>*/}
-                {/*</ActiveLink>*/}
+                className="relative bg-gray-300 border border-gray-500 rounded-4xl overflow-hidden max-w-[300px] max-h-[200px]">
+                <ActiveLink href={links[0]}>
+                    <Image
+                        className="w-full h-auto rounded-4xl"
+                        src={`/assets/${image}`}
+                        alt={title || "Project image"}
+                        width={300}
+                        height={200}
+                    />
+                </ActiveLink>
             </div>
             <div className={cn("w-2/3 flex ", reverse ? "flex-row-reverse" : "flex-row")}>
                 <div className={cn("w-5/6 p-4 flex flex-col justify-between ", reverse ? "text-right" : "")}>
@@ -61,7 +67,7 @@ export const Project = ({
                         )}>
                             {tags.map((tag) => (
                                 <ActiveLink key={tag.url} href={tag.url}>
-                                    <Typography variant="caption3" theme="MediumPurple">
+                                    <Typography variant="caption3" theme="MediumPurple" className="hover:font-bold">
                                         {tag.name}
                                     </Typography>
                                 </ActiveLink>
@@ -77,11 +83,11 @@ export const Project = ({
                             icon={{icon: VscDebugStart}}
                             iconTheme="accent"
                         />}
-                            <Button variant="ico"
-                                    baseUrl={links[0]}
-                                    icon={{icon: LuGithub}}
-                                    iconTheme="secondary"
-                            />
+                        <Button variant="ico"
+                                baseUrl={links[0]}
+                                icon={{icon: LuGithub}}
+                                iconTheme="secondary"
+                        />
                     </div>
                 </div>
             </div>
