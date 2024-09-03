@@ -2,7 +2,26 @@ import {ProjectType} from "@/type/projectType";
 
 export const projects: ProjectType[] = [
     {
-        date: 2023,
+        date: 2024,
+        type: "School Project",
+        title: "Android App",
+        description:
+            "I am currently developing my first Android application as part of this project.",
+        tags: [
+            {name: "Kotlin", url: "https://kotlinlang.org/"},
+        ],
+        links: [
+            "https://github.com/xXTitouanXx/AppInfoMobile",
+            "none",
+            "none",
+        ],
+        video: "/assets/svg/discord.svg",
+        image: "/assets/svg/discord.svg",
+        logo: "/assets/svg/discord.svg",
+        categories: ["Personal", "Web"],
+        run: false,
+    },{
+        date: 2024,
         type: "Personal Project",
         title: "Website",
         description:
@@ -26,7 +45,7 @@ export const projects: ProjectType[] = [
         run: false,
     },
     {
-        date: 2023,
+        date: 2024,
         type: "School Project",
         title: "Chess IA",
         description:
@@ -48,7 +67,7 @@ export const projects: ProjectType[] = [
         run: false,
     },
     {
-        date: 2023,
+        date: 2024,
         type: "School Project",
         title: "Bin Packing 2D",
         description:
@@ -68,7 +87,7 @@ export const projects: ProjectType[] = [
         run: false,
     },
     {
-        date: 2023,
+        date: 2024,
         type: "School Project",
         title: "Web API",
         description:
@@ -89,7 +108,7 @@ export const projects: ProjectType[] = [
         run: false,
     },
     {
-        date: 2023,
+        date: 2024,
         type: "School Project",
         title: "Web Client",
         description:
