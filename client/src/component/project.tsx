@@ -22,7 +22,7 @@ interface ProjectProps {
 }
 
 export const Project = ({
-                            date, type, title, description, tags, links, image, categories, reverse, run
+                            date, type, title, description, tags, links, image, categories, reverse, run, experience
                         }: ProjectProps) => {
     return (
         <div
@@ -83,11 +83,12 @@ export const Project = ({
                             icon={{icon: VscDebugStart}}
                             iconTheme="accent"
                         />}
-                        <Button variant="ico"
-                                baseUrl={links[0]}
-                                icon={{icon: LuGithub}}
-                                iconTheme="secondary"
-                        />
+                        {!experience &&
+                            <Button variant="ico"
+                                    baseUrl={links[0]}
+                                    icon={{icon: LuGithub}}
+                                    iconTheme="secondary"
+                            />}
                     </div>
                 </div>
             </div>

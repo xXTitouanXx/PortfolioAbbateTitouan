@@ -31,7 +31,7 @@ export const ExperiencesList = () => {
             </div>
             <DotPattern
                 className={cn(
-                    "absolute inset-0 z-0 [mask-image:radial-gradient(750px_circle_at_center,blue,transparent)]"
+                    `absolute inset-0 z-0 [mask-image:radial-gradient(900px_circle_at_center,blue,transparent)]`
                 )}
             />
         </div>

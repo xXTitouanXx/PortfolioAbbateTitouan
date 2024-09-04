@@ -3,6 +3,7 @@ import {projects} from "@/ressources/projects";
 import DotPattern from "@/lib/magicui/components/dot-pattern";
 import {cn} from "@/lib/utils";
 import {Typography} from "@/component/typography";
+import {experiences} from "@/ressources/experiences";
 
 export const ProjectsList = () => {
     return (
@@ -31,7 +32,7 @@ export const ProjectsList = () => {
             </div>
             <DotPattern
                 className={cn(
-                    "absolute inset-0 z-0 [mask-image:radial-gradient(750px_circle_at_center,blue,transparent)]"
+                    `absolute inset-0 z-0 [mask-image:radial-gradient(1800px_circle_at_center,blue,transparent)]`
                 )}
             />
         </div>
