@@ -36,16 +36,18 @@ export const Project = ({
                 className="absolute inset-0 rounded-4xl"
             />
             <div
-                className="relative bg-gray-300 border border-gray-500 rounded-4xl overflow-hidden max-w-[300px] max-h-[200px]">
-                <ActiveLink href={links[0]}>
-                    <Image
-                        className="w-full h-auto rounded-4xl"
-                        src={`/assets/${image}`}
-                        alt={title || "Project image"}
-                        width={300}
-                        height={200}
-                    />
-                </ActiveLink>
+                className="w-1/3 h-60 bg-gray-300 border border-gray-500 rounded-4xl flex items-center justify-center overflow-hidden">
+                <div className="relative w-full h-full">
+                    <ActiveLink href={links[0]}>
+                        <Image
+                            className="object-cover rounded-4xl"
+                            src={`/assets/${image}`}
+                            alt={title || "Project image"}
+                            layout="fill"
+                            objectFit="cover"
+                        />
+                    </ActiveLink>
+                </div>
             </div>
             <div className={cn("w-2/3 flex ", reverse ? "flex-row-reverse" : "flex-row")}>
                 <div className={cn("w-5/6 p-4 flex flex-col justify-between ", reverse ? "text-right" : "")}>
