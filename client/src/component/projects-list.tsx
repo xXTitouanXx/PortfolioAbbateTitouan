@@ -12,7 +12,7 @@ export const ProjectsList = () => {
         >
             <div className="pt-16 relative z-10"><Typography variant="h2" theme="Mauve">My projects</Typography></div>
 
-            <div className="pt-16 pb-16 space-y-8">
+            <div className="pt-16 pb-16 pl-14 pr-14 space-y-8">
                 {projects.map((project, index) => (
                     <Project
                         key={index}
