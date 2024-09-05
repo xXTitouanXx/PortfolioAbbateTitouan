@@ -2,8 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import {IconProps} from "@/type/iconType";
 import {Spinner} from "@/component/spinner";
-import {LinkType, LinkRepository} from "@/repository/linkRepository";
-import Link from "next/link";
+import {LinkType} from "@/repository/linkRepository";
 
 type ImageFormat = 'svg' | 'png' | 'jpg' | 'jpeg' | 'gif';
 
@@ -158,17 +157,11 @@ export const Button = ({
     )
 
     if (baseUrl) {
-        if (linkType === LinkRepository.EXTERNAL) {
-            return (
-                <a href={baseUrl} target="_blank">
-                    {buttonElement}
-                </a>
-            )
-        } else {
-            return (
-                <Link href={baseUrl}>{buttonElement}</Link>
-            )
-        }
+        return (
+            <a href={baseUrl} target="_blank">
+                {buttonElement}
+            </a>
+        )
     }
     return buttonElement
 };

@@ -15,7 +15,7 @@ export const ActiveLink = ({href, children}: Props) => {
     }, [router.pathname, href]);
 
     return (
-        <Link href={href} className={clsx(isActive && "text-primary font-medium")}>
+        <Link href={href} target={"_blank"} className={clsx(isActive && "text-primary font-medium")}>
             {children}
         </Link>
     )

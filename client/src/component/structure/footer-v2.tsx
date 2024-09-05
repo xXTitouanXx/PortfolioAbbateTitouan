@@ -44,7 +44,7 @@ export const FooterV2 = () => {
                 <div className="flex items-center justify-between">
                     <Typography variant="caption4" theme="LavenderBlush">
                         {`Copyright © ${currentYear} | Par `}
-                        <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/">Titouan Abbate</a>
+                        <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/" target={"_blank"}>Titouan Abbate</a>
                     </Typography>
                 </div>
             </Container>
