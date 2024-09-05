@@ -24,6 +24,8 @@ interface ProjectProps {
 export const Project = ({
                             date, type, title, description, tags, links, image, categories, reverse, run, experience
                         }: ProjectProps) => {
+    const isGif = image?.endsWith('.gif');
+
     return (
         <div
             className={cn("relative z-10 flex bg-purple-1300 pt-10 pb-10 pl-4 pr-4 rounded-4xl", reverse ? "flex-row-reverse" : "flex-row")}>
@@ -45,6 +47,7 @@ export const Project = ({
                             alt={title || "Project image"}
                             layout="fill"
                             objectFit="cover"
+                            unoptimized={isGif}
                         />
                     </ActiveLink>
                 </div>
@@ -81,7 +84,7 @@ export const Project = ({
                     <div className="absolute bottom-0 flex gap-2 p-2 ">
                         {run && <Button
                             variant="ico"
-                            baseUrl={links[3]}
+                            baseUrl={links[2]}
                             icon={{icon: VscDebugStart}}
                             iconTheme="accent"
                         />}

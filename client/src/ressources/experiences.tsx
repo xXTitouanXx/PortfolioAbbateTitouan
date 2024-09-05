@@ -66,7 +66,7 @@ export const experiences: ProjectType[] = [
             "none",
             "none",
         ],
-        image: undefined,
+        image: "images/no-image.jpg",
         categories: [],
         run: false,
         experience: true,

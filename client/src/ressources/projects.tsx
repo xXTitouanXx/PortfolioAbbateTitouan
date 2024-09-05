@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
             "none",
             "none",
         ],
-        image: "/assets/svg/discord.svg",
+        image: "images/no-image.jpg",
         categories: ["Personal", "Web"],
         run: false,
         experience:false,
@@ -50,8 +50,7 @@ export const projects: ProjectType[] = [
             "This dual-person project, implemented in a Jupyter Notebook, consists of several AI chess-playing agents. These agents employ diverse evaluation techniques (Alpha-Beta pruning, Minimax, Monte Carlo Tree Search) and can engage in both player-versus-player and player-versus-AI matches.",
         tags: [
             {name: "Python", url: "https://www.python.org/"},
-            {name: "Jupiter", url: "https://jupyter.org/"},
-            {name: "React", url: "https://fr.react.dev/"},
+            {name: "Jupyter", url: "https://jupyter.org/"},
         ],
         links: [
             "https://github.com/GaufredeDouglas/Chess_AI",
@@ -151,6 +150,7 @@ export const projects: ProjectType[] = [
         tags: [
             {name: "PHP", url: "https://www.php.net/manual/fr/intro-whatis.php"},
             {name: "CSS", url: "https://developer.mozilla.org/fr/docs/Web/CSS"},
+            {name: "MySQL", url: "https://www.mysql.com/fr/"},
         ],
         links: [
             "https://github.com/Axellrn13/projetshop",
@@ -169,8 +169,8 @@ export const projects: ProjectType[] = [
         description:
             "This project is a miniature brick breaker game project.",
         tags: [
-            {name: "Python", url: "https://www.python.org/"},
-            {name: "PyTorch", url: "https://pytorch.org/"},
+            {name: "C#", url: "https://dotnet.microsoft.com/fr-fr/languages/csharp#:~:text=C%23%20est%20un%20langage%20de,langages%20de%20programmation%20sur%20GitHub."},
+            {name: "Unity", url: "https://unity.com/fr"},
         ],
         links: [
             "https://github.com/xXTitouanXx/BrickBreaker",

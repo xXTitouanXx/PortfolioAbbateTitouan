@@ -28,12 +28,12 @@ export const FooterV2 = () => {
                         </ActiveLink>
                     </DockIcon>
                     <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-                        <ActiveLink href="https://www.instagram.com/titouanabt/">
+                        <ActiveLink href="mailto:titouan.abbate.pro@gmail.com">
                             <Icons.gmail className="size-full"/>
                         </ActiveLink>
                     </DockIcon>
                     <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-                        <ActiveLink href="17titou@gmail.com">
+                        <ActiveLink href="https://discord.gg/uaXXvhCx">
                             <Icons.discord className="size-full"/>
                         </ActiveLink>
                     </DockIcon>
