@@ -44,7 +44,13 @@ export const FooterV2 = () => {
                 <div className="flex items-center justify-between">
                     <Typography variant="caption4" theme="LavenderBlush">
                         {`Copyright © ${currentYear} | Par `}
-                        <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/" target={"_blank"}>Titouan Abbate</a>
+                        <a href="https://www.linkedin.com/in/titouan-abbate-13ba10240/" target={"_blank"} className="hover:font-bold hover:text-purple-500">Titouan
+                            Abbate</a>
+                    </Typography>
+                    <Typography variant="caption4" theme="LavenderBlush">
+                        <a href="https://www.flaticon.com/fr/icones-gratuites/dossier" title="dossier icônes" className="hover:font-bold hover:text-purple-500">
+                            Dossier icônes créées par iconixar - Flaticon
+                        </a>
                     </Typography>
                 </div>
             </Container>
