@@ -40,7 +40,7 @@ export const Presentation = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-white/20 rounded-full blur-md"></div>
                             <Image
-                                src="/assets/images/avatar.jpg"
+                                src="/assets/images/avatar1.jpg"
                                 width={500}
                                 height={500}
                                 alt="Avatar"
