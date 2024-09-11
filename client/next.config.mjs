@@ -5,8 +5,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    outputFileTracing: false,
-
+    //outputFileTracing: false,
 };
 
 export default nextConfig;

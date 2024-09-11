@@ -45,8 +45,7 @@ export const Project = ({
                             className="object-cover rounded-4xl"
                             src={`/assets/${image}`}
                             alt={title || "Project image"}
-                            layout="fill"
-                            objectFit="cover"
+                            fill style={{objectFit: 'cover'}}
                             unoptimized={isGif}
                         />
                     </ActiveLink>
