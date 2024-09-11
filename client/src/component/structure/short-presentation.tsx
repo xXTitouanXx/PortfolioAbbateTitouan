@@ -36,7 +36,7 @@ export const ShortPresentation = () => {
                     </BlurFade>
                     <BlurFade delay={0.25 * 6} inView>
                         <Typography variant="caption1" theme="Amethyst" component="span" className="max-w-xl">
-                            I’m a {age} years old french student engineer at Polytech Lyon and I also develop things on
+                            I’m a {age} year old french student engineer at Polytech Lyon and I also develop things on
                             my free time. l’m open to any opportunity.
                         </Typography>
                     </BlurFade>
