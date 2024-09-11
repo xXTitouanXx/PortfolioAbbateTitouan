@@ -31,7 +31,7 @@ export const ShortPresentation = () => {
                     </BlurFade>
                     <BlurFade delay={0.25 * 4} inView>
                         <Typography variant="h1" theme="Amethyst" component="span" className="max-w-xl">
-                            I'm in my 5th year of computer engineering.
+                            5th year of computer engineering.
                         </Typography>
                     </BlurFade>
                     <BlurFade delay={0.25 * 6} inView>
