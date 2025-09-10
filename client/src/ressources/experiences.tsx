@@ -2,6 +2,34 @@ import {ProjectType} from "@/type/projectType";
 
 export const experiences: ProjectType[] = [
     {
+        date: 2025,
+        type: "Bab Rayan",
+        title: "Software Engineering Intern",
+        description:
+            "Full-stack development of a custom web ERP system using Agile Scrum within a 4-person team for Bab Rayan, a non-profit organization in Casablanca, Morocco.",
+		tags: [
+			{name: "Next.js", url: "https://nextjs.org/"},
+			{name: "React", url: "https://reactjs.org/"},
+			{name: "TypeScript", url: "https://www.typescriptlang.org/"},
+			{name: "Refine", url: "https://refine.dev/"},
+			{name: "Ant Design", url: "https://ant.design/"},
+			{name: "Spring Boot", url: "https://spring.io/projects/spring-boot"},
+			{name: "Java", url: "https://www.java.com/"},
+			{name: "PostgreSQL", url: "https://www.postgresql.org/"},
+			{name: "Docker", url: "https://www.docker.com/"},
+			{name: "Trello", url: "https://trello.com/"},
+			{name: "Figma", url: "https://www.figma.com/"},
+		],
+        links: [
+            "https://babrayan.ma",
+            "none",
+            "none",
+        ],
+        image: "images/bab_rayan.png",
+        categories: [],
+        run: false,
+        experience: true,
+    }, {
         date: 2023,
         type: "IZISCAR",
         title: "Web development intern",

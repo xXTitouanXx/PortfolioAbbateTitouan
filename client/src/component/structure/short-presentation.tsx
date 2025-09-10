@@ -31,12 +31,12 @@ export const ShortPresentation = () => {
                     </BlurFade>
                     <BlurFade delay={0.25 * 4} inView>
                         <Typography variant="h1" theme="Amethyst" component="span" className="max-w-xl">
-                            5th year of computer engineering.
+							Junior Software Engineer.
                         </Typography>
                     </BlurFade>
                     <BlurFade delay={0.25 * 6} inView>
                         <Typography variant="caption1" theme="Amethyst" component="span" className="max-w-xl">
-                            I am a {age} year old french engineering student at Polytech Lyon who enjoys developing things on
+                            I am a {age} year old French Software Engineer, holding a Master's degree in Computer Engineering from Polytech Lyon who enjoys developing things on
                             my free time. I am open to any opportunity.
                         </Typography>
                     </BlurFade>
